@@ -1,0 +1,69 @@
+package com.anndaan.backend.payload;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
+public class DonorProfileRequest {
+    private String organizationName;
+
+    @Size(max = 500)
+    private String description;
+
+    @NotBlank
+    private String address;
+
+    @NotBlank
+    private String contactNumber;
+
+    private String website;
+
+    private boolean isOrganization;
+
+    public String getOrganizationName() {
+        return organizationName;
+    }
+
+    public void setOrganizationName(String organizationName) {
+        this.organizationName = organizationName;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getContactNumber() {
+        return contactNumber;
+    }
+
+    public void setContactNumber(String contactNumber) {
+        this.contactNumber = contactNumber;
+    }
+
+    public String getWebsite() {
+        return website;
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
+    public boolean isOrganization() {
+        return isOrganization;
+    }
+
+    public void setOrganization(boolean organization) {
+        isOrganization = organization;
+    }
+} 

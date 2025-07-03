@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donation Backend API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .endpoint {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #007bff;
+        }
+        .method {
+            font-weight: bold;
+            color: #007bff;
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Food Donation Backend API</h1>
+        <p>Welcome to the Food Donation Backend API. This service provides endpoints for managing food donation requests with OTP verification.</p>
+        
+        <h2>Available Endpoints:</h2>
+        
+        <div class="endpoint">
+            <div class="method">POST</div>
+            <code>/api/submit-application</code>
+            <p>Submit a food donation application and generate OTP</p>
+        </div>
+        
+        <div class="endpoint">
+            <div class="method">POST</div>
+            <code>/api/verify-otp</code>
+            <p>Verify the OTP sent to the phone number</p>
+        </div>
+        
+        <div class="endpoint">
+            <div class="method">POST</div>
+            <code>/api/save-donation</code>
+            <p>Save the donation request after OTP verification</p>
+        </div>
+        
+        <h2>How to Use:</h2>
+        <ol>
+            <li>Submit application with user details</li>
+            <li>Check console for generated OTP</li>
+            <li>Verify OTP using the verification endpoint</li>
+            <li>Save the donation request</li>
+        </ol>
+        
+        <p><strong>Note:</strong> OTPs are logged to the server console for demonstration purposes.</p>
+    </div>
+</body>
+</html>

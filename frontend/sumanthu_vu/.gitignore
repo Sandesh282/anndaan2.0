@@ -1,0 +1,46 @@
+# === General ===
+.DS_Store
+*.log
+*.env
+*.env.*.local
+
+# === Node/React ===
+node_modules/
+dist/
+build/
+package-lock.json
+yarn.lock
+
+# === Java / Maven / Spring Boot ===
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# === STS (Spring Tool Suite) ===
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# === IntelliJ IDEA ===
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# === NetBeans ===
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# === VS Code ===
+.vscode/
+
+# === Vercel Deployment ===
+.vercel/
